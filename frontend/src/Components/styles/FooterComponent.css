@@ -1,0 +1,9 @@
+.footer {
+    height: 60px;
+    color: whitesmoke;
+    text-align: center;
+    display: flex;
+    align-items: center; /* Выравнивание по центру */
+    justify-content: center;
+    background-color: #2E3B4E;
+}

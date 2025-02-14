@@ -2,8 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  // Устанавливаем режим разработки
-  mode: 'development',  // или 'production', если ты хочешь скомпилировать для продакшн
+  mode: 'development',  // или 'production'
 
   entry: './src/index.tsx',
   output: {
@@ -19,6 +18,10 @@ module.exports = {
         test: /\.(js|jsx|ts|tsx)$/,
         exclude: /node_modules/,
         use: 'babel-loader'
+      },
+      {
+        test: /\.css$/, // Добавляем поддержку CSS
+        use: ["style-loader", "css-loader"]
       }
     ]
   },

@@ -1,10 +1,18 @@
 import React from 'react';
-import HeaderComponent from './Components/HeaderComponent';
+import HeaderComponent from './components/HeaderComponent';
+import MainBlock1 from './components/MainBlock1';
+import MainBlock2 from './components/MainBlock2';
+import FooterComponent from './components/FooterComponent';
 
 const App = () => {
 
     return (
-        <HeaderComponent />
+        <div>
+            <HeaderComponent />
+            <MainBlock1 />
+            <MainBlock2 />
+            <FooterComponent />
+        </div>
     )
 };
 

@@ -1,0 +1,52 @@
+/* Шапка (header) */
+.header {
+    height: 100px;
+    background-color: #2E3B4E;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 120px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Логотип */
+.header .logo {
+    display: flex;
+    align-items: center;
+}
+
+.header .logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.header .title {
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Навигация */
+.header .nav {
+    display: flex;
+    gap: 24px;
+}
+
+.header .nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.3rem;
+    transition: color 0.3s ease-in-out;
+    font-family: 'Inter', sans-serif;
+}
+
+.header .nav a:hover {
+    color: #F0A500;
+}

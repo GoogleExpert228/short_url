@@ -1,0 +1,163 @@
+/* Основной блок (mainBlock1) */
+.mainBlock1 {
+    height: 480px; /* Немного уменьшил высоту */
+    background-color: #4C6A92; /* Холодный светлый цвет */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    padding: 20px;
+}
+
+/* Контейнер с текстом */
+.content {
+    max-width: 600px;
+    width: 100%;
+    transform: translateY(-20px); /* Поднимаем немного вверх */
+}
+
+/* Заголовок */
+.title {
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+/* Подзаголовок */
+.subtitle {
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-bottom: 25px;
+    opacity: 0.85;
+}
+
+/* Форма */
+.form {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+/* Поле ввода */
+.input {
+    flex-grow: 1;
+    padding: 15px 18px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    width: 100%;
+    max-width: 500px;
+    height: 60px; /* Увеличил высоту */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Легкая тень */
+}
+
+/* Кнопка */
+.button {
+    background-color: #2E3B4E; /* Глубокий синий цвет */
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 200px;
+    height: 60px; /* Соответствует высоте инпута */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Добавил тень */
+    transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+    background-color: #1F2A3A; /* Темнее при наведении */
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .title {
+        font-size: 1.8rem;
+    }
+
+    .subtitle {
+        font-size: 1.1rem;
+    }
+
+    .form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .input {
+        width: 100%;
+        max-width: none;
+    }
+
+    .button {
+        width: 100%;
+    }
+}
+
+.result {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.short-url-text {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 12px;
+    color: #333;
+}
+
+.short-url-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    background: #f8f9fa;
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.short-url-link {
+    font-size: 18px;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.short-url-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+.copy-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+.copy-button:hover {
+    background-color: #0056b3;
+}
+
+.copy-button:active {
+    transform: scale(0.95);
+}

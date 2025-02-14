@@ -1,0 +1,36 @@
+.mainBlock2 {
+    height: 600px;
+    background-color: #3A4F6A;
+}
+
+.mainBlock2_title {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    font-size: 2.5rem; /* Larger title font size */
+    font-weight: bold; /* Make the title bold */
+    text-align: center; /* Center the text */
+}
+
+.mainBlock2_description {
+    height: auto;
+    max-width: 800px; /* Limit width for readability */
+    margin: 0 auto; /* Center the content */
+    display: flex;
+    flex-direction: column; /* Stack the paragraphs */
+    justify-content: flex-start;
+    color: whitesmoke;
+    font-size: 1.1rem; /* Increase font size for better readability */
+    line-height: 1.8; /* Add spacing between lines */
+    padding: 20px;
+}
+
+.mainBlock2_description p {
+    margin-bottom: 15px; /* Space between paragraphs */
+}
+
+.mainBlock2_description br {
+    margin-bottom: 10px; /* Space after <br> for better separation */
+}
